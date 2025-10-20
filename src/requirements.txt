@@ -1,0 +1,19 @@
+SOLID - это принципы объектно-ориентированного программирования:
+
+S - ✅ В целом соблюден: каждый класс имеет одну ответственность
+O - ✅ Хорошо: можно добавлять новые виды одежды без изменения базового Clothing
+L - ✅ Sweaters/Trousers/Shoes полностью заменяют Clothing
+I - ⚠️ Пока не видно интерфейсов (можно добавить, например, Buyable)
+D - ⚠️ Shop зависит от конкретных классов, а не абстракций
+
+Объекты:
+
+Customer(id, name, balance)
+
+Clothing (id, name, price, size, color, material, quantity) -> Sweaters, Trousers, Shoes ()
+
+Basket (id, customerId, items[])
+
+Order (id, customerId, products[], total, date)
+
+Shop (name, products[], orders[])
